@@ -15,15 +15,55 @@
         background-color: palevioletred;
         color:white;
         box-shadow: none;
+        }
+      #winner{
+        color: palevioletred;
+        font-size: large;
+        font-weight: bold;
       }
+      #endGame{
+        display: none;
+      }
+      
+      
     </style>
 </head>
 <body>
   <h1>ROCK PAPER SCISSORS</h1>
-   <button>rock</button>
-   <button>paper</button>
-   <button>scissors</button>
 
+   <div class="game-btns" >
+    <button type="submit" id="rock" class="btn rock">
+      <img src="rock.png" alt="a hand showing rock choice" width="100px" height="100px">
+      <p>rock</p>
+    </button>
+
+    <button type="submit" id="paper" class="btn paper">
+      <img src="paper.png" alt="a hand showing paper choice" width="100px" height="100px">
+      <p>paper</p>
+      </button>
+
+    <button type="submit" id="scissors" class="btn scissors">
+      <img src="scissors.png" alt="a hand showing scissors choice" width="100px" height="100px">
+      <p>Scissors</p>
+    </button>
+   </div>
+
+   <div id="compChoice"></div>
+   <div id="playerChoice"></div>
+
+   <div id="scoreDisplay"></div>
+   
+   
+   <div id="results"></div>
+  
+   <div id="endGame">
+    <button type="button" onclick="window.location.reload()" 
+    style="background-color: palevioletred;">Play Again </button>
+   </div>
+    
+
+
+   
     <script src="odinRPS.js"></script>
 </body>
 </html>
